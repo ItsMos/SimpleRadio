@@ -1,4 +1,3 @@
-music/*
 # Logs
 logs
 *.log
@@ -34,6 +33,7 @@ bower_components
 build/Release
 
 # Dependency directories
+music/*
 node_modules/
 jspm_packages/
 
