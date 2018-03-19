@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  background-color: #6800de;
+  background-image: url("../img/bright-squares.png");
+}
+
+main {
+  margin-top: 60px;
+}
+
+.music-player {
+  color: #f8f8f8;
+  background: rgba(255, 255, 255, 0.3);
+  width: 250px;
+  padding: 15px 0 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.music-player .playing-track {
+  font-weight: 200;
+  margin: 5px;
+}
+
+.music-player .playing-track, .music-player .playing-author {
+  text-align: center;
+}
+
+.music-player .playing-author {
+  color: lightgray;
+}
+
+.music-player .visualizer {
+  background-color: #111;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.music-player .visualizer .play-pause {
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  color: #f8f8f8;
+  position: absolute;
+  border: 2px solid #f8f8f8;
+  background: 0;
+  border-radius: 50%;
+}
+
+.music-player .playlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.music-player .playlist-item {
+  padding: 5px 20px;
+  position: relative;
+}
+
+.music-player .playlist-item:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.music-player .playlist-item:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.music-player .playlist-item .order {
+  color: lightgray;
+  text-align: center;
+  font-weight: 200;
+  line-height: 110%;
+  position: absolute;
+}
+
+.music-player .playlist-item .track-info {
+  font-size: .9em;
+  margin-left: 30px;
+  padding-right: 20px;
+}
+
+.music-player .playlist-item .track-info .track-title {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.music-player .playlist-item .track-info .track-author {
+  color: lightgray;
+  margin: 0;
+}
+
+.music-player .playlist-item .track-duration {
+  color: lightgray;
+  font-size: 0.85em;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  line-height: 300%;
+}
+/*# sourceMappingURL=style.css.map */

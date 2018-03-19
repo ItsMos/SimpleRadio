@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div id="wrapper" class="app">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a href="#" class="navbar-brand">SimpleRadio</a>
+      <button class="navbar-toggler" data-toggle='collapse' data-target='#nav'>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container d-flex flex-wrap justify-content-center justify-content-sm-between">
+      <music-player inline-template>
+        <div class="music-player">
+          <h4 class='playing-track'>{{playing.title}}</h4>
+          <h6 class="playing-author">Track author</h6>
+
+          <div class="visualizer">
+            <button v-on:click='playPause' class="btn btn-light play-pause"><i :class="playState ? 'fa fa-pause' : 'fa fa-play'"></i></button>
+          </div>
+          
+          <audio ref='audioEl' v-on:ended='playNextTrack()' :src="playing.dataURI" type="audio/mpeg">
+          </audio>
+
+          <ol class="playlist">
+            <li class='playlist-item'>
+              <h2 class='order'>1</h2>
+              <div class='track-info'>
+                <h6 class='track-title'>All about that bass</h6>
+                <p class='track-author'>Meghan Trainor</p>
+              </div>
+              <span class='track-duration'>5:23</span>
+            </li>
+            <li class='playlist-item'>
+              <h2 class='order'>2</h2>
+              <div class='track-info'>
+                <h6 class='track-title'>All about that bass</h6>
+                <p class='track-author'>Meghan Trainor</p>
+              </div>
+              <span class='track-duration'>5:23</span>
+            </li>
+            <li class='playlist-item'>
+              <h2 class='order'>3</h2>
+              <div class='track-info'>
+                <h6 class='track-title'>All about that bass</h6>
+                <p class='track-author'>Meghan Trainor</p>
+              </div>
+              <span class='track-duration'>5:23</span>
+            </li>
+          </ol>
+        </div>
+      </music-player>
+
+    </main>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js" async></script>
+  <script src="js/vue.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "simple-radio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.16.2",
+    "musicmetadata": "^2.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pro-mos/SimpleRadio.git"
+  },
+  "author": "Mos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pro-mos/SimpleRadio/issues"
+  },
+  "homepage": "https://github.com/pro-mos/SimpleRadio#readme"
+}
